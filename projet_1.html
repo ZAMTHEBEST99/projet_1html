@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Projet Web Complet</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    header,
+    nav,
+    section,
+    article,
+    footer {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid #999;
+      border-collapse: collapse;
+      padding: 8px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Balise sémantique : header -->
+  <header>
+    <h1>Bienvenue sur mon site</h1>
+    <p>Ce site est un exemple de page HTML complète</p>
+  </header>
+
+  <!-- Navigation principale -->
+  <nav>
+    <ul>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#multimedia">Multimédia</a></li>
+      <li><a href="#tableau">Tableau</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Section About -->
+  <section id="about">
+    <h2>À propos de moi</h2>
+    <p>Je suis étudiant à l'UCAD, passionné par le développement web.</p>
+
+    <!-- Liste -->
+    <h3>Mes compétences</h3>
+    <ul>
+      <li>HTML / CSS</li>
+      <li>JavaScript</li>
+      <li>Montage vidéo</li>
+    </ul>
+
+    <!-- Lien local -->
+    <p>Téléchargez mon <a href="CV ZAM.pdf" download>CV ici</a>.</p>
+  </section>
+
+  <!-- Section multimédia avec balises <video> et <audio> -->
+  <section id="multimedia">
+    <h2>Contenu multimédia</h2>
+
+    <h3>Vidéo de présentation</h3>
+    <video width="500" controls>
+      <source src="video.mp4" type="video/mp4">
+      Votre navigateur ne supporte pas la lecture vidéo.
+    </video>
+
+    <h3>Audio d'introduction</h3>
+    <audio controls>
+      <source src="audio.mp3" type="audio/mpeg">
+      Votre navigateur ne supporte pas la lecture audio.
+    </audio>
+  </section>
+  <h4>Mon Portrait</h4>
+  <img src="Aaa.jpg" alt="Ma photo" width="300">
+  
+  <!-- Section tableau -->
+  <section id="tableau">
+    <h2>Expériences professionnelles</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Année</th>
+          <th>Entreprise</th>
+          <th>Poste</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2023</td>
+          <td>Sécuritas Sénégal</td>
+          <td>Secrétaire Général</td>
+        </tr>
+        <tr>
+          <td>2024</td>
+          <td>Service COM.SN</td>
+          <td>Gérant</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Section formulaire de contact -->
+  <section id="contact">
+    <h2>Contactez-moi</h2>
+    <form action="index.html" method="post">
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" name="nom" required><br>
+
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="message">Message :</label>
+      <textarea id="message" name="message" rows="4" required></textarea><br>
+
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <!-- Pied de page -->
+  <footer>
+    <p>&copy; 2025 - Zeinel Abedine Mohamed Fall | Tous droits réservés</p>
+  </footer>
+
+</body>
+
+</html>
